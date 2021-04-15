@@ -1,0 +1,6 @@
+@use './abstracts';
+@use './layouts';
+body {
+    background: abstracts.$bg-main-grey;
+    font-size: 15px;
+}
