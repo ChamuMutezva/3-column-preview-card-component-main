@@ -1,7 +1,21 @@
 @use '../abstracts';
+
 main {
     padding-top: 88px;
+    padding-bottom: 24px;
+    position: relative;
+    
+
+    @include abstracts.mQ(1080px) {
+        padding-top: 171px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
 .wrapper {
     overflow-x: hidden;
 }
