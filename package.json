@@ -6,15 +6,24 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "npm run parcel && npm run sass",
-    "sass": "sass scss/style.scss:scss/style.css",
+    "sass": "sass scss/style.scss:css/style.css",
     "parcel": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChamuMutezva/3-column-preview-card-component-main.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChamuMutezva/3-column-preview-card-component-main/issues"
+  },
+  "homepage": "https://github.com/ChamuMutezva/3-column-preview-card-component-main#readme",
   "devDependencies": {
     "cssnano": "^5.0.1",
+    "parcel-bundler": "^1.12.5",
     "postcss": "^8.2.10",
-    "sass": "^1.32.8"
+    "sass": "^1.32.10"
   }
 }
