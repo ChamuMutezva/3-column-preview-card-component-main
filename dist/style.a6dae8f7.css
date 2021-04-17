@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;700;900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.card {
+  position: relative;
+  max-width: 327px;
+  margin: auto;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  padding-top: 48px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.card:nth-child(n+2) {
+  top: -10px;
+}
+.card:last-child {
+  top: -20px;
+}
+.card .card__title {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.6666666667rem;
+  margin-top: 35px;
+}
+.card .card__inner {
+  padding: 0 48px;
+}
+.card .card__summary {
+  margin-top: 35px;
+  line-height: 25px;
+  font-size: 1rem;
+}
+.card .card--btn {
+  line-height: 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  padding: 0.6rem 2rem;
+  border: 1px solid transparent;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 49px;
+}
+@media screen and (min-width: 1080px) {
+  .card {
+    margin: 0;
+    max-width: 307px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+  }
+  .card:nth-child(n+2) {
+    top: 0px;
+    left: -10px;
+  }
+  .card:last-child {
+    top: 0px;
+    left: -20px;
+  }
+  .card .card--btn {
+    margin-top: 78px;
+  }
+}
+
+.sedan {
+  background-color: #e38826;
+}
+.sedan .card--btn {
+  color: #e38826;
+}
+
+.suv {
+  background-color: #006970;
+}
+.suv .card--btn {
+  color: #006970;
+}
+
+.luxury {
+  background-color: #004241;
+}
+.luxury .card--btn {
+  color: #004241;
+}
+
+main {
+  padding-top: 88px;
+  padding-bottom: 24px;
+  position: relative;
+}
+@media screen and (min-width: 1080px) {
+  main {
+    padding-top: 171px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+body {
+  background: #f2f2f2;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=/style.a6dae8f7.css.map */
