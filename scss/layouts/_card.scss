@@ -43,10 +43,11 @@
         font-size: abstracts.calculateRem(15);
         border-radius: 25px;
         padding: 0.6rem 2rem;
-        border: 1px solid transparent;
+        border: 2px solid transparent;
         font-weight: 600;
         margin-top: 24px;
-        margin-bottom: 49px;
+        margin-bottom: 49px;   
+        outline: none;    
     }
     @include abstracts.mQ(1080px){
         margin: 0;
@@ -75,6 +76,12 @@
     background-color: abstracts.$bg-orange;
     .card--btn {
         color: abstracts.$tx-orange;
+        &:hover {
+            cursor: pointer;   
+            background-color: abstracts.$bg-orange;  
+            color: #ffffff;   
+            border: 2px solid #ffffff;    
+        }
     }
 }
 
@@ -82,6 +89,12 @@
     background-color: abstracts.$bg-cyan;
     .card--btn {
         color: abstracts.$tx-cyan;
+        &:hover {
+            cursor: pointer;   
+            background-color: abstracts.$bg-cyan;  
+            color: #ffffff;   
+            border: 2px solid #ffffff;    
+        }
     }
 }
 
@@ -89,6 +102,12 @@
     background-color: abstracts.$bg-green;
      .card--btn {
         color: abstracts.$tx-green;
+        &:hover {
+            cursor: pointer;   
+            background-color: abstracts.$bg-green;  
+            color: #ffffff;   
+            border: 2px solid #ffffff;    
+        }
     }
 
 }

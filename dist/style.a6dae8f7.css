@@ -91,10 +91,11 @@ table {
   font-size: 1rem;
   border-radius: 25px;
   padding: 0.6rem 2rem;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   font-weight: 600;
   margin-top: 24px;
   margin-bottom: 49px;
+  outline: none;
 }
 @media screen and (min-width: 1080px) {
   .card {
@@ -123,6 +124,12 @@ table {
 .sedan .card--btn {
   color: #e38826;
 }
+.sedan .card--btn:hover {
+  cursor: pointer;
+  background-color: #e38826;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
 
 .suv {
   background-color: #006970;
@@ -130,12 +137,24 @@ table {
 .suv .card--btn {
   color: #006970;
 }
+.suv .card--btn:hover {
+  cursor: pointer;
+  background-color: #006970;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
 
 .luxury {
   background-color: #004241;
 }
 .luxury .card--btn {
   color: #004241;
+}
+.luxury .card--btn:hover {
+  cursor: pointer;
+  background-color: #004241;
+  color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
 main {
