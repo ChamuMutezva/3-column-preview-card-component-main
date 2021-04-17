@@ -75,13 +75,11 @@ table {
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 2.6666666667rem;
+  margin-top: 35px;
 }
 .card .card__inner {
   padding: 0 48px;
-}
-.card .card__title {
-  font-size: 40px;
-  margin-top: 35px;
 }
 .card .card__summary {
   margin-top: 35px;
