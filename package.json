@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "npm run parcel && npm run sass",
-    "sass": "sass scss/style.scss:css/style.css",
+    "sass": "sass scss/styles.scss:css/style.css",
     "parcel": "parcel build index.html"
   },
   "keywords": [],
