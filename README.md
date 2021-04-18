@@ -50,51 +50,78 @@ Users should be able to:
 ### What I learned
 
 - Invisible Content Just for Screen Reader Users. Content to be read by a screen reader but
- not to be seen on the screen.
+ not to be seen on the screen. Put the class below on an element that should not be visually
+ present.
  - method 1
  ```
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+  .sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+  }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Source [CSS in Action](https://webaim.org/techniques/css/invisiblecontent/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- parceljs error/bug during build
+**html head section**
+    use this during production. the project failed  to run during `npm run build`.  comment the line below in the head section to solve the issue and return the line when done with build
+     `<link rel="stylesheet" href="./css/style.css" />`
+    use this for development. the project failed to run during `npm run build`. 
+    comment the .scss line below in the head section to solve the issue and return the line when done with build.  `<link rel="stylesheet" href="./scss/style.scss" />`
+
+    ** COMMENT OUT THE LINK STYLES TO SOLVE ISSUE **
+
+    ```
+    ×  C:\Users\Precious Mutezva\OneDrive\Documents\Github\3-column-preview-card-component-main\css\style.css:undefined:undefined: plugin is not a function
+    at LazyResult.run (C:\Users\Precious Mutezva\OneDrive\Documents\Github\3-column-preview-card-component-main\node_modules\parcel-bundler\node_modules\postcss\lib\lazy-result.js:288:14)
+    at LazyResult.asyncTick (C:\Users\Precious Mutezva\OneDrive\Documents\Github\3-column-preview-card-component-main\node_modules\parcel-bundler\node_modules\postcss\lib\lazy-result.js:212:26)
+    at C:\Users\Precious Mutezva\OneDrive\Documents\Github\3-column-preview-card-component-main\node_modules\parcel-bundler\node_modules\postcss\lib\lazy-result.js:254:14
+    at new Promise (<anonymous>)
+    at LazyResult.async (C:\Users\Precious Mutezva\OneDrive\Documents\Github\3-column-preview-card-component-main\node_modules\parcel-bundler\node_modules\postcss\lib\lazy-result.js:250:23)
+    at LazyResult.then (C:\Users\Precious Mutezva\OneDrive\Documents\Github\3-column-preview-card-component-main\node_modules\parcel-bundler\node_modules\postcss\lib\lazy-result.js:131:17)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! 3-column-preview-card-component-main@1.0.0 parcel: `parcel build index.html`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the 3-column-preview-card-component-main@1.0.0 parcel script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Precious Mutezva\AppData\Roaming\npm-cache\_logs\2021-04-18T09_48_01_495Z-debug.log
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! 3-column-preview-card-component-main@1.0.0 build: `npm run parcel && npm run sass`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the 3-column-preview-card-component-main@1.0.0 build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Precious Mutezva\AppData\Roaming\npm-cache\_logs\2021-04-18T09_48_02_326Z-debug.log
+PS C:\Users\Precious Mutezva\OneDrive\Documents\Github\3-column-preview-card-component-main>
+```
+
+
 
 ### Continued development
+- improve on accessibility
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [CSS in Action](https://webaim.org/techniques/css/invisiblecontent/) , Hiding elements that should be read by screenreaders only.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Chamu Mutezva](https://github.com/ChamuMutezva)
+- Frontend Mentor - [@ChamuMutezva](https://www.frontendmentor.io/profile/ChamuMutezva)
+- Twitter - [@ChamuMutezva](https://twitter.com/ChamuMutezva)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Frontend Mentor - for the challenge
