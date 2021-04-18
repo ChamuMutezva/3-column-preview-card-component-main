@@ -83,30 +83,7 @@ Source [CSS in Action](https://webaim.org/techniques/css/invisiblecontent/) to l
     at new Promise (<anonymous>)
     at LazyResult.async (C:\Users\Precious Mutezva\OneDrive\Documents\Github\3-column-preview-card-component-main\node_modules\parcel-bundler\node_modules\postcss\lib\lazy-result.js:250:23)
     at LazyResult.then (C:\Users\Precious Mutezva\OneDrive\Documents\Github\3-column-preview-card-component-main\node_modules\parcel-bundler\node_modules\postcss\lib\lazy-result.js:131:17)
-npm ERR! code ELIFECYCLE
-npm ERR! errno 1
-npm ERR! 3-column-preview-card-component-main@1.0.0 parcel: `parcel build index.html`
-npm ERR! Exit status 1
-npm ERR! 
-npm ERR! Failed at the 3-column-preview-card-component-main@1.0.0 parcel script.
-npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-
-npm ERR! A complete log of this run can be found in:
-npm ERR!     C:\Users\Precious Mutezva\AppData\Roaming\npm-cache\_logs\2021-04-18T09_48_01_495Z-debug.log
-npm ERR! code ELIFECYCLE
-npm ERR! errno 1
-npm ERR! 3-column-preview-card-component-main@1.0.0 build: `npm run parcel && npm run sass`
-npm ERR! Exit status 1
-npm ERR!
-npm ERR! Failed at the 3-column-preview-card-component-main@1.0.0 build script.
-npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-
-npm ERR! A complete log of this run can be found in:
-npm ERR!     C:\Users\Precious Mutezva\AppData\Roaming\npm-cache\_logs\2021-04-18T09_48_02_326Z-debug.log
-PS C:\Users\Precious Mutezva\OneDrive\Documents\Github\3-column-preview-card-component-main>
 ```
-
-
 
 ### Continued development
 - improve on accessibility
