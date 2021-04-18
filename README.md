@@ -82,8 +82,7 @@ Source [CSS in Action](https://webaim.org/techniques/css/invisiblecontent/) to l
     at C:\Users\Precious Mutezva\OneDrive\Documents\Github\3-column-preview-card-component-main\node_modules\parcel-bundler\node_modules\postcss\lib\lazy-result.js:254:14
     at new Promise (<anonymous>)
     at LazyResult.async (C:\Users\Precious Mutezva\OneDrive\Documents\Github\3-column-preview-card-component-main\node_modules\parcel-bundler\node_modules\postcss\lib\lazy-result.js:250:23)
-    at LazyResult.then (C:\Users\Precious Mutezva\OneDrive\Documents\Github\3-column-preview-card-component-main\node_modules\parcel-bundler\node_modules\postcss\lib\lazy-result.js:131:17)
-```
+    at LazyResult.then (C:\Users\Precious Mutezva\OneDrive\Documents\Github\3-column-preview-card-component-main\node_modules\parcel-bundler\node_modules\postcss\lib\lazy-result.js:131:17) ```
 
 ### Continued development
 - improve on accessibility
