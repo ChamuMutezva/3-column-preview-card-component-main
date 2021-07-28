@@ -1,22 +1,26 @@
 @use '../abstracts';
 
 main {
-    padding-top: 88px;
-    padding-bottom: 24px;
-    
-    position: relative;
-    
+  //padding-top: 88px;
+ // padding-bottom: 24px;
 
-    @include abstracts.mQ(1080px) {
-        padding-top: 171px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-    }
+  position: relative;
+
+  @include abstracts.mQ(1080px) {
+   // padding-top: 171px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .wrapper {
-    overflow-x: hidden;
+  overflow-x: hidden;
+  display: grid;
+ // place-items: center;
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh;
 }
